@@ -1,0 +1,124 @@
+.sidebar{
+    position: relative;
+    padding: 10px 20px;
+    width: auto;
+    height:100vh ;
+    overflow-y:hidden ;
+}
+.sidebar::-webkit-scrollbar{
+    width: 5px;
+} 
+.sidebar::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 5px;
+      
+}
+.sidebar:hover{
+    overflow-y: scroll;
+}
+.barmenu{
+   display: flex;
+   flex-direction: column; 
+}
+.barimg{
+    position: relative;
+    height: 10vh;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.images{
+    height: 10vh;
+    width: 50px;
+    object-fit: cover;
+}
+.barprofiles{
+    background-color: rgba(218, 216, 216, 0.588);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+    height: 60px;
+    border-radius: 5px;
+    width: 35vh;
+    margin-bottom: 20px;
+}
+.barprofile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.barprofile img{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-family: sans-serif;
+}
+.barprofile span{
+    color: rgb(100, 99, 99);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+}
+.menulist{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    padding: 2px 8px 0px;
+    border-radius: 5px;
+    color: rgb(58, 58, 58);
+    text-decoration: none;
+}
+.menulist:hover{
+    background-color: rgba(236, 236, 236, 0.588);
+}
+.menulist h3{
+    font-size: 14px;
+    color:rgb(120, 120, 120) ;
+}
+.menufoots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menuimage{
+    width: 90px;
+    margin-top: 50px;
+    object-fit: cover;
+    margin-left: 30px;
+}
+.upgrade{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.get{
+    font-weight: 700;
+    font-size: 19px;
+    color: rgb(64, 64, 64);
+    margin-bottom: 10px;
+}
+.price{
+    font-size: 15px;
+    color: rgb(114, 114, 114);
+    margin-bottom: 15px;
+}
+.btn{
+    background-color: rgb(32, 101, 209);
+    padding: 10px 30px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-family:'Public Sans', sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+}

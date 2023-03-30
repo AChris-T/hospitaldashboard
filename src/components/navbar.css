@@ -1,0 +1,140 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    width:calc(100%);
+}
+.navcontainer{
+    width: auto;
+}
+.top{
+    display: flex;
+    align-items: center;
+}
+.searchItem{
+    display: flex;
+    position: absolute;
+    -webkit-backdrop-filter:blur(2px);
+    justify-content: space-between;
+    backdrop-filter: blur(2px);
+    z-index: 99;
+    background-color: rgba(249, 250, 251, 0.8);
+    box-shadow: rgba(145, 158, 171, 0.16) 0px 8px 16px 0px;  
+    width: 100%;
+    height: 15vh;
+    padding: 0 90px 0 20px;
+    margin-top: -25px;
+    animation-name: example;
+    animation-duration: 0.5s;
+}
+@keyframes example {
+    from {top: -20px;}
+    to {top: 23px;}
+
+  }
+.searchField{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 78.5%;
+}
+.inputs{
+    display: flex;
+    flex: 9;    
+    align-items: center;
+    margin-right: 20px;
+}
+.inputicon{
+    color: rgb(100, 99, 99);
+}
+input{
+    height: 7vh;
+    margin-left: 10px;
+    width:95%;
+    background-color: transparent;
+    border: none;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+input:focus{
+    outline: none;
+}
+.searchbtn{
+    background-color:rgb(32, 101, 209) ;
+    padding: 10px;
+    color:rgb(255, 255, 255) ;
+    text-decoration: none;
+    border-radius:5px;
+}
+.searchicon{
+    color: rgb(100, 99, 99);
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 50%;
+}
+.searchicon:hover{
+    background-color: rgb(223, 223, 223);
+}
+.navbtn{
+    display:none;
+    visibility: hidden;
+}
+.navbarIcon{
+    color: rgb(100, 99, 99);
+    margin-right: 10px;
+    cursor: pointer;  
+}
+.searchdetails{
+    display: flex;
+    align-items: center;
+}
+.searchdetail{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width:75%;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.searchdetailinfo{
+    display: flex;
+    align-items: center;
+    
+}
+.usImage{
+    width: 30px;
+    height:20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.profileImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+@media screen and (max-width:1029.33px) {
+    .top{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .navcontainer{
+        margin-left: 10px;
+    }
+    .navbtn{
+        display: block;
+        visibility: visible;
+    }
+    .searchItem{
+        margin-left: -50px;
+        width: 105%;
+    }
+    .searchField{
+        width: 100%;
+    }
+    .searchdetail{
+        padding: 0 30px 0 5px;
+        width: 90%;
+    }
+}
