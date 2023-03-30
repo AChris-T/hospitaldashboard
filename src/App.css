@@ -3,6 +3,7 @@
     height: auto;
     width: auto;
     position: relative;
+    overflow-x:hidden;
     
 }
 

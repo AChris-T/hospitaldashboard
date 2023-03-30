@@ -21,7 +21,6 @@ const style = {
   bgcolor: 'background.paper',
   border: '2px solid #ffff',
   boxShadow: 2,
-  scrollY:'scroll',
 };
 
 const Navbar = () => {

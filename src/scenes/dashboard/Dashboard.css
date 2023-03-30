@@ -1,0 +1,185 @@
+.dashboard{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.headerCon{
+    margin-bottom: 40px;
+}
+.headerCon h4{
+    font-size: 25px;
+}
+.dashcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.dashcont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 250px;
+    background-color: rgb(209, 233, 252);  
+    text-align: center;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.dashcont:nth-child(2){
+    background-color: rgb(208, 242, 255);
+    color: rgb(12, 83, 183);
+}
+.dashcont:nth-child(3){
+    color: rgb(122, 79, 1);
+    background-color: rgb(255, 247, 205);
+}
+.dashcont:nth-child(4){
+    color: rgb(122, 12, 46);
+    background-color: rgb(255, 231, 217);
+}
+.dashIcons{
+    display: flex;
+    border-radius: 50%;
+    background-image: linear-gradient(135deg, rgba(16, 57, 150, 0) 0%, rgba(16, 57, 150, 0.24) 100%);
+    width: 64px;
+    height: 64px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px
+}
+.dashIcons2{
+    display: flex;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: rgb(12, 83, 183);
+    background-image: linear-gradient(135deg, rgba(12, 83, 183, 0) 0%, rgba(12, 83, 183, 0.24) 100%);
+}
+.dashIcons3{
+    display: flex;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: rgb(183, 129, 3);
+    background-image: linear-gradient(135deg, rgba(183, 129, 3, 0) 0%, rgba(183, 129, 3, 0.24) 100%);
+}
+.dashIcons4{
+    display: flex;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: rgb(183, 33, 54);
+    background: linear-gradient(135deg, rgba(183, 33, 54, 0) 0%, rgba(183, 33, 54, 0.24) 100%);
+}
+h3{
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+h6{
+    font-weight: 600;
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    font-family: "Public Sans", sans-serif;
+    opacity: 0.72;
+    letter-spacing: 0.8px;
+}
+@media screen and (max-width:970px) {
+    .dashcont{
+        width: 200px;
+    }
+}
+@media screen and (max-width:899.33px) {
+    .dashcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .dashcont{
+        width: 400px;
+        margin-bottom:30px ;
+    }
+}
+@media screen and (max-width:870px) {
+    .dashcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .dashcont{
+        width: 370px;
+        margin-bottom:30px ;
+    }
+}
+@media screen and (max-width:810px) {
+    .dashcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .dashcont{
+        width: 350px;
+        margin-bottom:30px ;
+    }
+}
+@media screen and (max-width:766px) {
+    .dashcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .dashcont{
+        width: 330px;
+        margin-bottom:30px ;
+    }
+}
+@media screen and (max-width:734px) {
+    .dashcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .dashcont{
+        width: 300px;
+        margin-bottom:30px ;
+    }
+}
+@media screen and (max-width:670px) {
+    .dashcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .dashcont{
+        width: 280px;
+        margin-bottom:30px ;
+    }
+}
+@media screen and (max-width:640px) {
+    .dashcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .dashcont{
+        width: 260px;
+        margin-bottom:30px ;
+    }
+}
+@media screen and (max-width:599px) {
+    .dashcontainer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .dashcont{
+        margin-right: 30px;
+        width: auto;
+        margin-bottom:30px ;
+    }
+}
