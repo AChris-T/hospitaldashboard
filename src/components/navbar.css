@@ -20,12 +20,13 @@
     z-index: 99;
     background-color: rgba(249, 250, 251, 0.8);
     box-shadow: rgba(145, 158, 171, 0.16) 0px 8px 16px 0px;  
-    width: 100%;
+    width: 78%;
     height: 15vh;
-    padding: 0 90px 0 20px;
-    margin-top: -25px;
+    padding: 0px 30px 0 20px;
+    margin-top: -35px;
     animation-name: example;
     animation-duration: 0.5s;
+    overflow-x: hidden;
 }
 @keyframes example {
     from {top: -20px;}
@@ -36,11 +37,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 78.5%;
+    justify-content: space-between;
+    width: 100%;
 }
 .inputs{
-    display: flex;
-    flex: 9;    
+    display: flex;    
     align-items: center;
     margin-right: 20px;
 }
@@ -50,7 +51,7 @@
 input{
     height: 7vh;
     margin-left: 10px;
-    width:95%;
+    width:100vh;
     background-color: transparent;
     border: none;
     padding-left: 20px;
@@ -128,13 +129,34 @@ input:focus{
     }
     .searchItem{
         margin-left: -50px;
-        width: 105%;
+        width: 100.5%;
     }
     .searchField{
-        width: 100%;
+        width:150vh;
+        padding-right: 20px;
     }
     .searchdetail{
         padding: 0 30px 0 5px;
         width: 90%;
+    }
+}
+@media screen and (max-width:770px) {
+    input{
+        width:70vh ;
+    }
+}
+@media screen and (max-width:594px) {
+    input{
+        width:50vh ;
+    }
+}
+@media screen and (max-width:547px) {
+    input{
+        width:40vh ;
+    }
+}
+@media screen and (max-width:398px) {
+    input{
+        width:20vh ;
     }
 }
