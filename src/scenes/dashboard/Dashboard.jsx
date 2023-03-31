@@ -4,6 +4,11 @@ import AdbOutlinedIcon from '@mui/icons-material/AdbOutlined';
 import AppleIcon from '@mui/icons-material/Apple';
 import WindowRoundedIcon from '@mui/icons-material/WindowRounded';
 import { BugReport } from '@mui/icons-material';
+import Box from '@mui/material/Box';
+import LineCharts from '../../components/LineCharts';
+import PieChart from '../../components/PieChart';
+
+
 
 const Dashboard = () => {
   return (
@@ -40,6 +45,31 @@ const Dashboard = () => {
             <h3>234</h3>
             <span>Bug Report </span>
           </div>
+       </div>
+       {/*--------------------Graph-----------------------*/}
+       <div className='chartscont'>
+       <Box className='boxChart'
+         sx={{
+         backgroundColor: 'background.paper', 
+        }}
+        >
+        <div className='chartdetails'>
+            <h4>Website Visits</h4>
+            <span>(+43%) than last year</span>
+        </div>
+        <LineCharts/>
+         </Box>
+         <Box className='boxCharts'
+         sx={{ 
+         backgroundColor: 'background.paper', 
+        }}
+        >
+        <div className='chartdetails'>
+            <h4 style={{marginBottom:"60px",marginTop:"20px"}}>Current Visits
+            </h4> 
+        </div>
+        <PieChart/>
+         </Box>
        </div>
     </div>
   )
