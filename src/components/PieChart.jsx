@@ -15,14 +15,40 @@ export default class PieChart extends Component {
             legend: {
                 show: false
             }, 
-            responsive: [{
-              breakpoint: 480,
+            responsive: [
+              {
+              breakpoint: 570,
               options: {
-                chart: {
-                  width:'100%'
-                },
+                  chart:{
+                      width:400,
+                  }
+              },
+          }],
+          responsive: [{
+            breakpoint: 470,
+            options: {
+                chart:{
+                    width:350,
+                }
+            },
+        }],
+        responsive: [{
+          breakpoint: 419,
+          options: {
+              chart:{
+                  width:300,
               }
-            }]
+          },
+      }],
+      responsive: [{
+        breakpoint: 362,
+        options: {
+            chart:{
+                width:250,
+            }
+        },
+    }],
+
           },
         
         

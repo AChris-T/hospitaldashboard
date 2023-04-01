@@ -32,9 +32,18 @@ export class LineCharts extends Component {
             },
             plotOptions: {
               bar: {
-                columnWidth: '50%'
+                columnWidth: '20%'
               }
+              
             },
+            responsive: [{
+              breakpoint: 570,
+              options: {
+                  chart:{
+                      height:460,
+                  }
+              },
+          }],
             
             fill: {
               opacity: [0.85, 0.25, 1],
