@@ -459,6 +459,9 @@ h6{
     }
 }
 @media screen and (max-width:334px) {
+    .content{
+        margin-left: 8px;
+    }
     .boxChart{
         width: 260px;
     }
