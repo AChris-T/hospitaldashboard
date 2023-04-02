@@ -37,6 +37,14 @@ export class Radia extends Component {
                     }
                 },
             }],
+            responsive: [{
+                breakpoint: 399,
+                options: {
+                    chart:{
+                        width:200,
+                    }
+                },
+            }],
             stroke: {
               width: 2
             },

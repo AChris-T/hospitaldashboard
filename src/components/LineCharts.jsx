@@ -44,6 +44,7 @@ export class LineCharts extends Component {
                   }
               },
           }],
+          
             fill: {
               opacity: [0.85, 0.25, 1],
               gradient: {

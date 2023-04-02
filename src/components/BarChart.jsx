@@ -9,8 +9,8 @@ export default class BarChart extends Component {
         this.state = {
           series: [{
             data: [44, 55, 41, 64, 22, 43, 21]
-          }, {
-          }],
+          }, 
+          ],
         options: {
             chart: {
               type: 'bar',
@@ -90,10 +90,19 @@ export default class BarChart extends Component {
         options: {
             chart:{
                 width:250,
-                height:400,
+                height:500,
             }
         },
     }],
+    responsive: [{
+      breakpoint:360,
+      options: {
+          chart:{
+              width:150,
+              height:500,
+          }
+      },
+  }],
             stroke: {
               show: true,
               width: 1,
@@ -111,8 +120,6 @@ export default class BarChart extends Component {
               categories: [0, 300,600,900,1200,1500],
             },
           },
-        
-        
         };
 
     }
