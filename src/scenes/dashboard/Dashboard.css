@@ -111,13 +111,13 @@ h6{
 .boxChart{
     width: 600px;
     height:auto;
-    border-radius:20px;
+    border-radius:10px;
     padding:10px 20px;
 }
 .boxCharts{
     width: 320px;
     height:450px;
-    border-radius:20px;
+    border-radius:10px;
     display: flex;
     flex-direction: column;
 }
@@ -199,6 +199,58 @@ h6{
     object-fit: cover;
     border-radius: 10px;
     margin-right: 10px;
+}
+ .timeline{
+    margin-top: 30px;
+    margin-left:30px ;
+}  
+.timeline h4{
+    margin-bottom: 40px;
+}
+.timelineContent{
+    display:flex;
+    flex-direction:column;
+    margin-top: 20px;
+}
+.content{
+    display:flex;
+    flex-direction:row;
+    margin-left: 25px;
+}
+.dot-line{
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+    width: 20px;
+    align-items: center;
+}
+.dot{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+.line{
+    width: 1.3px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.orders-date{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap:10px
+}
+.orders{
+    font-size: 1.00em;
+    color: rgb(33, 43, 54);
+}
+.date{
+    line-height: 1.5;
+    font-size: 0.85rem;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    color: rgb(99, 115, 129);
+
 }
 @media screen and (max-width:1030px) {
     .chartscont{
@@ -321,5 +373,93 @@ h6{
         margin-right: 30px;
         width: auto;
         margin-bottom:30px ;
+    }
+}
+@media screen and (max-width:590px) {
+    .newsimage{
+        width: 60px;
+        height: 60px;
+    }
+    .newsdetailinfo a{
+        font-size: 13px;
+    }
+    .newsdetailinfo span{
+        font-size: 12px;
+    }
+    .about span{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:514px) {
+    .newsimage{
+        width: 50px;
+        height: 50px;
+    }
+    .newsdetailinfo a{
+        display: flex;
+        font-size: 13px;
+    }
+    .newsdetailinfo span{
+        font-size: 12px;
+    }
+    .about span{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:530px) {
+    .boxChart{
+        width: 430px;
+    }
+  .newsinfos{
+    overflow-x:scroll;
+    width:100%;
+  }  
+  .newsinfo{
+    width:600px;
+  }
+}
+@media screen and (max-width:500px) {
+    .boxChart{
+        width: 420px;
+    }
+}
+@media screen and (max-width:480px) {
+    .boxChart{
+        width: 400px;
+    }
+}
+@media screen and (max-width:460px) {
+    .boxChart{
+        width: 380px;
+    }
+}
+@media screen and (max-width:440px) {
+    .boxChart{
+        width: 360px;
+    }
+}
+@media screen and (max-width:416px) {
+    .boxChart{
+        width: 340px;
+    }
+}
+@media screen and (max-width:399px) {
+    .boxChart{
+        width: 320px;
+    }
+}
+@media screen and (max-width:377px) {
+    .boxChart{
+        width: 300px;
+    }
+}
+@media screen and (max-width:356px) {
+    .boxChart{
+        width: 280px;
+    }
+}
+@media screen and (max-width:334px) {
+    .boxChart{
+        width: 260px;
     }
 }

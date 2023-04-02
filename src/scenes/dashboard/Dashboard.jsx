@@ -192,9 +192,66 @@ const Dashboard = () => {
                  backgroundColor: 'background.paper', 
                 }}
               >
-              <div className='timeline'>
-                <h5>Order Timeline</h5>
+            <div className='timeline'>
+                <h4> Order Timeline </h4>
+                <div className='timelineContent'>
+                  <div className="content">
+                    <div className="dot-line">
+                      <div className="dot"  style={{backgroundColor:"purple"}}></div>
+                      <div className="line" style={{backgroundColor:"grey"}}></div>
+                    </div>
+                    <div className="orders-date">
+                      <div className='orders'><strong>1983</strong>,orders, <strong>$4220</strong></div>
+                      <div className="date"> <span>28 Jun 2022 5:16PM</span> </div>
+                    </div>
+                </div>
+                <div className="content">
+                    <div className="dot-line">
+                      <div className="dot"  style={{backgroundColor:"green"}}></div>
+                      <div className="line" style={{backgroundColor:"grey"}}></div>
+                    </div>
+                    <div className="orders-date">
+                      <div className='orders'><strong>1983</strong>,orders, <strong>$4220</strong></div>
+                      <div className="date"> <span>28 Jun 2022 5:16PM</span> </div>
+                    </div>
+                </div>
+                <div className="content">
+                    <div className="dot-line">
+                      <div className="dot"  style={{backgroundColor:"blue"}}></div>
+                      <div className="line" style={{backgroundColor:"grey"}}></div>
+                    </div>
+                    <div className="orders-date">
+                      <div className='orders'><strong>1983</strong>,orders, <strong>$4220</strong></div>
+                      <div className="date"> <span>28 Jun 2022 5:16PM</span> </div>
+                    </div>
+                </div>
+                <div className="content">
+                <div className="dot-line">
+                <div className="dot"  style={{backgroundColor:"yellow"}}></div>
+                <div className="line" style={{backgroundColor:"grey"}}></div>
+                </div>
+                <div className="orders-date">
+                <div className='orders'><strong>1983</strong>,orders, <strong>$4220</strong></div>
+                <div className="date"> <span>28 Jun 2022 5:16PM</span> </div>
+                </div>
+                
+                </div>
+                <div className="content">
+                <div className="dot-line">
+                <div className="dot" style={{backgroundColor:"red"}}></div>
+                <div className="line"></div>
+                </div>
+                <div className="orders-date">
+                <div className='orders'><strong>1983</strong>,orders, <strong>$4220</strong></div>
+                <div className="date"> <span>28 Jun 2022 5:16PM</span> </div>
+                </div>
+                
+                </div>
+                </div>
+             
               </div>
+              
+
               </Box>
       </div>
       </div> 
