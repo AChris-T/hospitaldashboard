@@ -110,7 +110,7 @@ h6{
 }
 .boxChart{
     width: 600px;
-    height:450px;
+    height:auto;
     border-radius:20px;
     padding:10px 20px;
 }
@@ -145,6 +145,60 @@ h6{
     display:flex;
     padding:7px 10px;
     align-items: normal;
+}
+.newsinfos{
+    position:relative;
+}
+.newsinfo{
+    display:flex;
+    flex-direction:row;
+    margin-bottom: 10px;
+}
+.newsdetail{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.newsdetailinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.newsdetailinfo a{
+    font-weight: 600;
+    font-size: 0.875rem;
+    font-family: "Public Sans", sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+    color: rgb(33, 43, 54);
+}
+.newsdetailinfo span{
+    font-size: 0.875rem;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(99, 115, 129);
+}
+.about span{
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    color: rgb(99, 115, 129);
+    padding-right: 24px;
+    flex-shrink: 0;
+}
+.newsimage{
+    width:70px;
+    height:70px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 @media screen and (max-width:1030px) {
     .chartscont{

@@ -8,8 +8,12 @@ import Box from '@mui/material/Box';
 import LineCharts from '../../components/LineCharts';
 import PieChart from '../../components/PieChart';
 import BarChart from '../../components/BarChart'
-import Radia from '../../components/Radia';
-
+import Radia from '../../components/Radia'; 
+import US from "../../assests/cover1.jpg";
+import cover2 from "../../assests/cover_2.jpg";
+import cover3 from "../../assests/cover_3.jpg";
+import cover4 from "../../assests/cover_4.jpg";
+import cover5 from "../../assests/cover_5.jpg";
 
 const Dashboard = () => {
   return (
@@ -47,7 +51,7 @@ const Dashboard = () => {
             <span>Bug Report </span>
           </div>
        </div>
-       {/*--------------------Graph-----------------------*/}
+       {/*-------------------------Graph----------------------------------------*/}
        <div className="chartBox">
        <div className='chartscont'>
        <Box className='boxChart'
@@ -79,7 +83,7 @@ const Dashboard = () => {
        <Box className='boxChart'
          sx={{
          backgroundColor: 'background.paper', 
-        }}
+         }}
         >
         <div className='chartdetails'>
             <h4>Conversion Rates</h4>
@@ -88,9 +92,9 @@ const Dashboard = () => {
         <BarChart/>
          </Box>
          <Box className='boxCharts'
-         sx={{ 
-         backgroundColor: 'background.paper', 
-        }}
+          sx={{ 
+          backgroundColor: 'background.paper', 
+          }}
         >
         <div className='chartdetails'>
             <h4 style={{marginBottom:"60px",marginTop:"20px"}}>Current Subject</h4> 
@@ -99,7 +103,100 @@ const Dashboard = () => {
             <Radia/>
             </div>
          </Box>
-      </div> 
+      </div>
+      {/*-------------------------------News Update--------------------------- */} 
+        <div className='chartscont'>
+          <Box className='boxChart'
+            sx={{
+            backgroundColor: 'background.paper', 
+            }}
+            >
+            <div className='chartdetails'>
+              <h4 style={{marginBottom:"30px",marginTop:"20px" ,marginLeft:'20px'}}>News Update</h4> 
+            </div>
+            <div className="newsinfos">
+              <div className="newsinfo">
+                 <div className="newsdetails">
+                  <img src={US} alt="cover" className='newsimage'/>
+                 </div> 
+                  <div className="newsdetail">
+                    <div className='newsdetailinfo'>
+                      <a href='/'>Regional Creative Coordinator</a>
+                      <span>Product Accounts Supervisor</span>
+                  </div> 
+                  <div className='about'>
+                    <span>about 17 hours ago</span> 
+                  </div>
+                </div>
+              </div>
+                  <div className="newsinfo">
+                  <div className="newsdetails">
+                    <img src={cover2} alt="cover" className='newsimage'/>
+                  </div> 
+                <div className="newsdetail">
+                    <div className='newsdetailinfo'>
+                    <a href='/'>Regional Creative Coordinator</a>
+                    <span>Product Accounts Supervisor</span>
+                    </div> 
+                    <div className='about'>
+                      <span>about 17 hours ago</span> 
+                    </div>
+                  </div>
+                </div>
+                <div className="newsinfo">
+                 <div className="newsdetails">
+                  <img src={cover3} alt="cover" className='newsimage'/>
+                 </div> 
+                  <div className="newsdetail">
+                    <div className='newsdetailinfo'>
+                    <a href='/'>Investor Branding Associate</a>
+                    <span>Product Accounts Supervisor</span>
+                    </div> 
+                  <div className='about'>
+                    <span>about 17 hours ago</span> 
+                  </div>
+                </div>
+              </div>
+                <div className="newsinfo">
+                  <div className="newsdetails">
+                    <img src={cover4} alt="cover" className='newsimage'/>
+                  </div> 
+                  <div className="newsdetail">
+                    <div className='newsdetailinfo'>
+                       <a href='/'>National Data Officer</a>
+                       <span>Product Accounts Supervisor</span>
+                    </div> 
+                    <div className='about'>
+                      <span>about 17 hours ago</span> 
+                    </div>
+                  </div>
+                </div>
+                <div className="newsinfo">
+                 <div className="newsdetails">
+                  <img src={cover5} alt="cover" className='newsimage'/>
+                 </div> 
+                  <div className="newsdetail">
+                    <div className='newsdetailinfo'>
+                    <a href='/'>Future Mobility Associate</a>
+                    <span>Product Accounts Supervisor</span>
+                    </div> 
+                  <div className='about'>
+                    <span>about 17 hours ago</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Box>
+          <Box className='boxCharts'
+                sx={{ 
+                 backgroundColor: 'background.paper', 
+                }}
+              >
+              <div className='timeline'>
+                <h5>Order Timeline</h5>
+              </div>
+              </Box>
+      </div>
       </div> 
      </div> 
   )
