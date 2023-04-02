@@ -7,22 +7,22 @@ export default class BarChart extends Component {
         super(props);
 
         this.state = {
-        
           series: [{
             data: [44, 55, 41, 64, 22, 43, 21]
           }, {
-            data: [53, 32, 33, 52, 13, 44, 32]
           }],
-          options: {
+        options: {
             chart: {
               type: 'bar',
-              height: 430
+              height: 500,
             },
+
             plotOptions: {
               bar: {
                 horizontal: true,
+                rowsWidth: '10%',
                 dataLabels: {
-                  position: 'top',
+                  position: 'top', 
                 },
               }
             },
@@ -34,6 +34,66 @@ export default class BarChart extends Component {
                 colors: ['#fff']
               }
             },
+             responsive: [{
+              breakpoint:880,
+              options: {
+                  chart:{
+                      width:100,
+                  }
+              },
+          }],
+          responsive: [{
+            breakpoint:800,
+            options: {
+                chart:{
+                    width:600,
+                }
+            },
+        }],
+        responsive: [{
+          breakpoint:699,
+          options: {
+              chart:{
+                  width:500,
+              }
+          },
+      }],
+            responsive: [{
+              breakpoint:590,
+              options: {
+                  chart:{
+                      width:400,
+                      height:400,
+                  }
+              },
+          }],
+          responsive: [{
+            breakpoint:516,
+            options: {
+                chart:{
+                    width:350,
+                    height:400,
+                }
+            },
+        }], 
+        responsive: [{
+          breakpoint:460,
+          options: {
+              chart:{
+                  width:300,
+                  height:400,
+              }
+          },
+      }],
+      responsive: [{
+        breakpoint:399,
+        options: {
+            chart:{
+                width:250,
+                height:400,
+            }
+        },
+    }],
             stroke: {
               show: true,
               width: 1,
@@ -44,7 +104,11 @@ export default class BarChart extends Component {
               intersect: false
             },
             xaxis: {
-              categories: [2001, 2002, 2003, 2004, 2005, 2006, 2007],
+              categories: ['Italy',"Japan","China","Canada","France","Germany","South Korea","Netherlands","united state","united kingdom"],
+              colors:['#fff'], 
+            },
+            yaxis: {
+              categories: [0, 300,600,900,1200,1500],
             },
           },
         
@@ -54,13 +118,13 @@ export default class BarChart extends Component {
     }
   render() {
     return (
-        <div style={{display:"flex",flexDirection:"row"}}>
+        <div>
         <Chart 
         className="chatbtn"
         options={this.state.options}
         series={this.state.series}
-        type="pie"
-        width="300px"
+        type="bar"
+        width="100%"
       /></div>
     )
   }

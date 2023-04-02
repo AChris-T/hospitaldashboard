@@ -9,7 +9,6 @@ export default class PieChart extends Component {
           series: [44, 55, 13, 43, 22],
           options: {
             chart: {
-              width: 380,
               type: 'pie',
             }, 
             legend: {
@@ -63,7 +62,7 @@ export default class PieChart extends Component {
         options={this.state.options}
         series={this.state.series}
         type="pie"
-        width="300px"
+        width="100%"
       /></div>
     )
   }

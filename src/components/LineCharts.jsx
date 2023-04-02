@@ -40,11 +40,10 @@ export class LineCharts extends Component {
               breakpoint: 570,
               options: {
                   chart:{
-                      height:460,
+                      height:400,
                   }
               },
           }],
-            
             fill: {
               opacity: [0.85, 0.25, 1],
               gradient: {

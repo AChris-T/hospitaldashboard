@@ -96,6 +96,10 @@ h6{
     font-family: "Public Sans", sans-serif;
     opacity: 0.72;
     letter-spacing: 0.8px;
+} 
+.chartBox{
+    display: flex;
+    flex-direction: column;
 }
 .chartscont{
     display:grid;
@@ -108,7 +112,7 @@ h6{
     width: 600px;
     height:450px;
     border-radius:20px;
-    padding:30px;
+    padding:10px 20px;
 }
 .boxCharts{
     width: 320px;
@@ -116,24 +120,30 @@ h6{
     border-radius:20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+.chatmenu{
+    width: 320px;
+    height:450px;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
 }
 .chartdetails h4{
     font-weight: 700;
-    line-height: 1.55556;
     font-size: 1.0625rem;
+    margin-left:10px;
+    margin-top: 20px;
     font-family: "Public Sans", sans-serif;
     display: block;
     align-items:flex-start;
 }
 .chartdetails span{
-    line-height: 1.57143;
     font-size: 0.875rem;
     font-family: "Public Sans", sans-serif;
     font-weight: 400;
     color: rgb(99, 115, 129);
     display:flex;
-    padding:20px 10px;
+    padding:7px 10px;
     align-items: normal;
 }
 @media screen and (max-width:1030px) {
@@ -149,6 +159,12 @@ h6{
     .boxCharts{
         width: auto;
         height: auto;
+    }
+    .piechart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
     }
 }
 @media screen and (max-width:970px) {
@@ -185,6 +201,11 @@ h6{
     .dashcont{
         width: 370px;
         margin-bottom:30px ;
+    }
+}
+@media screen and (max-width:826px) {
+    .chatmenu{
+        background-color:red
     }
 }
 @media screen and (max-width:810px) {

@@ -7,7 +7,8 @@ import { BugReport } from '@mui/icons-material';
 import Box from '@mui/material/Box';
 import LineCharts from '../../components/LineCharts';
 import PieChart from '../../components/PieChart';
-
+import BarChart from '../../components/BarChart'
+import Radia from '../../components/Radia';
 
 
 const Dashboard = () => {
@@ -47,6 +48,7 @@ const Dashboard = () => {
           </div>
        </div>
        {/*--------------------Graph-----------------------*/}
+       <div className="chartBox">
        <div className='chartscont'>
        <Box className='boxChart'
          sx={{
@@ -65,13 +67,41 @@ const Dashboard = () => {
         }}
         >
         <div className='chartdetails'>
-            <h4 style={{marginBottom:"60px",marginTop:"20px"}}>Current Visits
+            <h4 style={{marginBottom:"60px",marginTop:"20px" ,marginLeft:'20px'}}>Current Visits
             </h4> 
         </div>
-        <PieChart/>
+        <div className="piechart">
+            <PieChart/>
+        </div>
          </Box>
        </div>
-    </div>
+      <div className='chartscont'>
+       <Box className='boxChart'
+         sx={{
+         backgroundColor: 'background.paper', 
+        }}
+        >
+        <div className='chartdetails'>
+            <h4>Conversion Rates</h4>
+            <span>(+43%) than last year</span>
+        </div>
+        <BarChart/>
+         </Box>
+         <Box className='boxCharts'
+         sx={{ 
+         backgroundColor: 'background.paper', 
+        }}
+        >
+        <div className='chartdetails'>
+            <h4 style={{marginBottom:"60px",marginTop:"20px"}}>Current Subject</h4> 
+        </div>
+            <div className="piechart">
+            <Radia/>
+            </div>
+         </Box>
+      </div> 
+      </div> 
+     </div> 
   )
 }
 
