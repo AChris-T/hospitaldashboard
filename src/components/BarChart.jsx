@@ -98,7 +98,7 @@ export default class BarChart extends Component {
       breakpoint:360,
       options: {
           chart:{
-              width:150,
+              width:200,
               height:500,
           }
       },
