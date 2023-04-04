@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 220px;
+    width: 90%;
     height: 250px;
     background-color: rgb(209, 233, 252);  
     text-align: center;
@@ -106,17 +106,18 @@ h6{
     grid-template-columns: 1fr 1fr;
     margin-top: 30px;
     gap:20px;
-    margin-bottom:40px;
+    margin-bottom:10px;
 }
 .boxChart{
-    width: 600px;
+    width: 115%;
     height:auto;
     border-radius:10px;
     padding:10px 20px;
 }
 .boxCharts{
-    width: 320px;
-    height:450px;
+    width: 72%;
+    margin-left: 22%;
+    height:100%;
     border-radius:10px;
     display: flex;
     flex-direction: column;
@@ -153,6 +154,20 @@ h6{
     display:flex;
     flex-direction:row;
     margin-bottom: 10px;
+}
+.boxChat{
+    width: 132%;
+    height:auto;
+    border-radius:10px;
+    padding:10px 20px;
+}
+.boxChats{
+    width: 61%;
+    margin-left: 34%;
+    height:100%;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
 }
 .newsdetail{
     display: flex;
@@ -259,12 +274,15 @@ h6{
         margin-right: 30px;
     }
     .boxChart{
-        width:auto;
+        width:115%;
         height: auto;
     }
     .boxCharts{
         width: auto;
         height: auto;
+    }
+    .boxChats{
+        width:67% ;
     }
     .piechart{
         display: flex;
@@ -276,6 +294,13 @@ h6{
 @media screen and (max-width:970px) {
     .dashcont{
         width: 200px;
+    }
+    .boxChart{
+        width:100%;
+        height: auto;
+    }
+    .boxCharts{
+        margin-left:0% ;
     }
 }
 @media screen and (max-width:899.33px) {
@@ -297,6 +322,13 @@ h6{
     }
     .boxCharts{
         height:auto ;
+    }
+    .boxChat{
+        width:100%
+    }
+    .boxChats{
+        margin-left: 0%;
+        width: 100%;
     }
 }
 @media screen and (max-width:870px) {
@@ -407,7 +439,7 @@ h6{
     }
 }
 @media screen and (max-width:530px) {
-    .boxChart{
+    .boxChart,.boxChat, .boxChats .boxCharts{
         width: 430px;
     }
   .newsinfos{
@@ -419,42 +451,42 @@ h6{
   }
 }
 @media screen and (max-width:500px) {
-    .boxChart{
+    .boxChart,.boxChat, .boxChats .boxCharts{
         width: 420px;
     }
 }
 @media screen and (max-width:480px) {
-    .boxChart{
+    .boxChart,.boxChat, .boxChats .boxCharts{
         width: 400px;
     }
 }
 @media screen and (max-width:460px) {
-    .boxChart{
+    .boxChart,.boxChat, .boxChats .boxCharts{
         width: 380px;
     }
 }
 @media screen and (max-width:440px) {
-    .boxChart{
+    .boxChart,.boxChat, .boxChats .boxCharts{
         width: 360px;
     }
 }
 @media screen and (max-width:416px) {
-    .boxChart{
+    .boxChart,.boxChat, .boxChats .boxCharts{
         width: 340px;
     }
 }
 @media screen and (max-width:399px) {
-    .boxChart{
+    .boxChart,.boxChat, .boxChats .boxCharts{
         width: 320px;
     }
 }
 @media screen and (max-width:377px) {
-    .boxChart{
+    .boxChart,.boxChat, .boxChats .boxCharts{
         width: 300px;
     }
 }
 @media screen and (max-width:356px) {
-    .boxChart{
+    .boxChart,.boxChat, .boxChats .boxCharts{
         width: 280px;
     }
 }
@@ -462,7 +494,7 @@ h6{
     .content{
         margin-left: 8px;
     }
-    .boxChart{
+    .boxChart,.boxChat, .boxChats .boxCharts{
         width: 260px;
     }
 }

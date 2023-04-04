@@ -106,7 +106,7 @@ const Dashboard = () => {
       </div>
       {/*-------------------------------News Update--------------------------- */} 
         <div className='chartscont'>
-          <Box className='boxChart'
+          <Box className='boxChat'
             sx={{
             backgroundColor: 'background.paper', 
             }}
@@ -187,7 +187,8 @@ const Dashboard = () => {
               </div>
             </div>
           </Box>
-          <Box className='boxCharts'
+          {/*-----------------------timeline------------------------- */}
+          <Box className='boxChats'
                 sx={{ 
                  backgroundColor: 'background.paper', 
                 }}
