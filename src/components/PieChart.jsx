@@ -63,6 +63,7 @@ export default class PieChart extends Component {
         series={this.state.series}
         type="pie"
         width="100%"
+        height='190%'
       /></div>
     )
   }

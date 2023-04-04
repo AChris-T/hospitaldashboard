@@ -27,8 +27,8 @@
     margin-top: 10px;
 }
 .images{
-    height: 10vh;
-    width: 50px;
+    height: 60%;
+    width: 30%;
     object-fit: cover;
 }
 .barprofiles{
