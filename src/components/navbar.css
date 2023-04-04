@@ -148,11 +148,7 @@ input:focus{
         height: 80px;
     }
 }
-@media screen and (max-width:804px) {
-    .searchItem{
-        width: ;
-    }
-}
+
 @media screen and (max-width:770px) {
     input{
         width:70vh ;
@@ -169,6 +165,10 @@ input:focus{
     }
 }
 @media screen and (max-width:398px) {
+    .searchItem{
+        width: 110%;
+        padding-left: 40px;
+    }
     input{
         width:20vh ;
     }
