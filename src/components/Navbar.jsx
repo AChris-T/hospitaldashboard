@@ -18,7 +18,7 @@ const style = {
   top: '0%',
   left: '0%', 
   width: 280,
-  height:700,
+  height:'100%',
   bgcolor: 'background.paper',
   border: '2px solid #ffff',
   boxShadow: 2,

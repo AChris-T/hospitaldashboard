@@ -1,24 +1,27 @@
 .sidebar{
     position: fixed;
-    padding: 10px 27px;
-    width: auto;
-    height:100vh ;
+    padding: 10px 2px 10px;
+    width: 22%;
+    height:100% ;
     overflow-y:hidden ;
+
 }
 .sidebar::-webkit-scrollbar{
-    width: 5px;
+    width: 2px;
 } 
 .sidebar::-webkit-scrollbar-thumb {
     background: grey; 
     border-radius: 5px;
-      
 }
 .sidebar:hover{
     overflow-y: scroll;
 }
 .barmenu{
    display: flex;
+   width: 100%;
    flex-direction: column; 
+   padding: 5px 20px;
+
 }
 .barimg{
     position: relative;
@@ -38,7 +41,7 @@
     padding: 10px 20px 10px 10px;
     height: 60px;
     border-radius: 5px;
-    width: 35vh;
+    width: 90%;
     margin-bottom: 20px;
 }
 .barprofile{
@@ -72,6 +75,7 @@
     flex-direction: row;
     align-items: center;
     height: 40px;
+    width: 95%;
     padding: 2px 8px 0px;
     border-radius: 5px;
     color: rgb(58, 58, 58);
@@ -121,4 +125,13 @@
     font-family:'Public Sans', sans-serif;
     font-size: 15px;
     border-radius: 5px;
+}
+@media screen and (max-width:1030px) {
+    .sidebar{
+        width: 275px;
+        overflow-y: scroll;
+    }
+    .barprofiles{
+       width: 100%; 
+    }
 }

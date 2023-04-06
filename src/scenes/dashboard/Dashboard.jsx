@@ -1,5 +1,5 @@
-import React from 'react'
-import './Dashboard.css'
+import React from 'react';
+import './Dashboard.css';
 import AdbOutlinedIcon from '@mui/icons-material/AdbOutlined';
 import AppleIcon from '@mui/icons-material/Apple';
 import WindowRoundedIcon from '@mui/icons-material/WindowRounded';
@@ -14,6 +14,8 @@ import cover2 from "../../assests/cover_2.jpg";
 import cover3 from "../../assests/cover_3.jpg";
 import cover4 from "../../assests/cover_4.jpg";
 import cover5 from "../../assests/cover_5.jpg";
+
+
 
 const Dashboard = () => {
   return (
@@ -192,7 +194,7 @@ const Dashboard = () => {
                 sx={{ 
                  backgroundColor: 'background.paper', 
                 }}
-              >
+            >
             <div className='timeline'>
                 <h4> Order Timeline </h4>
                 <div className='timelineContent'>
@@ -245,16 +247,37 @@ const Dashboard = () => {
                 <div className="orders-date">
                 <div className='orders'><strong>1983</strong>,orders, <strong>$4220</strong></div>
                 <div className="date"> <span>28 Jun 2022 5:16PM</span> </div>
+                </div>    
                 </div>
-                
                 </div>
-                </div>
-             
               </div>
-              
-
               </Box>
-      </div>
+          </div>
+          {/*-----------------------------------------Traffic Site ----------------------------------------------- */}
+          <div className='chartscont'>
+          <Box className='boxtraffic'
+            sx={{
+            backgroundColor: 'background.paper', 
+            }}
+            >
+            <div className='chartdetails'>
+                <h4 style={{marginBottom:"30px",marginTop:"20px" ,marginLeft:'20px'}}>Traffic by Site</h4> 
+            </div>
+              .trafficInfo
+
+            </Box>
+            {/*-----------------------------------------Task--------------------------------------*/}
+            <Box className='boxTask'
+              sx={{
+              backgroundColor: 'background.paper', 
+              }}
+              >
+              <div className='chartdetails'>
+                <h4 style={{marginBottom:"30px",marginTop:"20px" ,marginLeft:'20px'}}>Task</h4> 
+              </div> 
+              </Box>
+            </div> 
+
       </div> 
      </div> 
   )
