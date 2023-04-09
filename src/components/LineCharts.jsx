@@ -40,7 +40,7 @@ export class LineCharts extends Component {
               breakpoint: 570,
               options: {
                   chart:{
-                      height:400,
+                      height:300,
                   }
               },
           }],

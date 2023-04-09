@@ -14,10 +14,14 @@ import cover2 from "../../assests/cover_2.jpg";
 import cover3 from "../../assests/cover_3.jpg";
 import cover4 from "../../assests/cover_4.jpg";
 import cover5 from "../../assests/cover_5.jpg";
-
+import { ImFacebook } from "react-icons/im";
+import {BsGoogle } from "react-icons/bs";
+import {GrLinkedinOption } from "react-icons/gr";
+import {GrTwitter } from "react-icons/gr";
 
 
 const Dashboard = () => {
+
   return (
     <div className="dashboard">
        <div className="headerCon">
@@ -263,7 +267,29 @@ const Dashboard = () => {
             <div className='chartdetails'>
                 <h4 style={{marginBottom:"30px",marginTop:"20px" ,marginLeft:'20px'}}>Traffic by Site</h4> 
             </div>
-              .trafficInfo
+              <div className="trafficicons">
+                <div className="trafficicon">
+                  <ImFacebook style={{fontSize:'40px', color:'rgb(24, 119, 242)'}}/>
+                  <h6>325.32K</h6>
+                  <span>Facebook</span>
+                </div>
+                <div className="trafficicon">
+                <BsGoogle style={{fontSize:'40px', color:'rgb(223, 62, 48)'}}/>
+                 <h6>300.2K</h6>
+                  <span>Google</span>
+              </div>
+              <div className="trafficicon">
+                <GrLinkedinOption style={{fontSize:'40px', color:'rgb(0, 96, 151)'}}/>
+                 <h6>312.32K</h6>
+                  <span>Linkedin</span>
+              </div>  
+              <div className="trafficicon">
+                <GrTwitter style={{fontSize:'40px', color:'rgb(28, 156, 234)'}}/>
+                 <h6>443.23K</h6>
+                  <span>Twitter</span>
+              </div>
+              
+            </div>
 
             </Box>
             {/*-----------------------------------------Task--------------------------------------*/}
@@ -274,10 +300,42 @@ const Dashboard = () => {
               >
               <div className='chartdetails'>
                 <h4 style={{marginBottom:"30px",marginTop:"20px" ,marginLeft:'20px'}}>Task</h4> 
+              </div>  
+              <div className="taskchecks">
+                <div className="taskcheck">
+                    <label htmlFor="">
+                      <input type="checkbox" className='checkbox' />
+                      <span>Create FireStone logo</span>
+                    </label>
+                </div>
+                <div className="taskcheck">
+                    <label htmlFor="">
+                      <input type="checkbox" className='checkbox' />
+                      <span>Add SCSS and JS files if required </span>
+                    </label>
+                </div>
+                <div className="taskcheck">
+                    <label htmlFor="">
+                      <input type="checkbox" className='checkbox' />
+                      <span>Stakeholder Meeting</span>
+                    </label>
+                </div>
+                <div className="taskcheck">
+                    <label htmlFor="">
+                      <input type="checkbox" className='checkbox' />
+                      <span>Scoping & Estimations</span>
+                    </label>
+                </div>
+                <div className="taskcheck">
+                    <label htmlFor="">
+                      <input type="checkbox" className='checkbox' />
+                      <span>Sprint Showcase </span>
+                    </label> 
+                </div>
               </div> 
-              </Box>
+              </Box> 
             </div> 
-
+              
       </div> 
      </div> 
   )

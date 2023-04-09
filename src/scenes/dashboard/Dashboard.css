@@ -267,6 +267,64 @@ h6{
     color: rgb(99, 115, 129);
 
 }
+.boxtraffic{
+    width:60%;
+    border-radius:10px ;
+    height: fit-content;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+
+}
+.trafficicons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.trafficicon{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    gap: 5px;
+    height: 8rem;
+    border-radius: 6px;
+    border: 1px solid rgba(145, 158, 171, 0.24);
+}
+.trafficicon span{
+    color:rgb(99, 115, 129);
+    font-size: 13px;
+}
+.trafficicon h6{
+    color: black;
+    font-weight: 800;
+}
+.boxTask{
+    width: 135%;
+    margin-left:-40%;
+    border-radius: 10px;
+    height:fit-content;
+    padding-bottom: 10px;
+}
+.taskchecks{
+    display: flex;
+    flex-direction: column;
+    padding:0px 20px ;
+}
+.taskcheck{
+    display: flex;
+}
+label{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.checkbox{
+    width: 20px;
+}
 @media screen and (max-width:1030px) {
     .chartscont{
         display: grid;
@@ -327,6 +385,14 @@ h6{
         width:100%
     }
     .boxChats{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .boxtraffic{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .boxTask{
         margin-left: 0%;
         width: 100%;
     }
