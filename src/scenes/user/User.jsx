@@ -1,9 +1,17 @@
 import React from 'react'
+import {Box} from '@mui/material'
+import Table from './Table'
+import './user.css'
+
 
 const User = () => {
   return (
-    <div>
-      <h3>User</h3>
+    <div className='user-tabs'>
+      <div className="usertab">
+        <Box>
+          <Table/>
+        </Box>
+      </div>
     </div>
   )
 }
